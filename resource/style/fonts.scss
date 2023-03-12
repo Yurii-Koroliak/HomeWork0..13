@@ -1,0 +1,69 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/red-hat-display-v14-latin-regular.woff2') format('woff2'),
+         url('../fonts/red-hat-display-v14-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v23-latin-regular.woff2') format('woff2'),
+         url('../fonts/lato-v23-latin-regular.woff') format('woff');
+}
+  @font-face {
+    font-display: swap;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v23-latin-700.woff2') format('woff2'),
+         url('../fonts/lato-v23-latin-700.woff') format('woff');
+}
+
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    &__caption {
+        font-family: $--f-Red-Hat-Display;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $--c-black;
+    }
+    &__galery {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0px;
+        }
+        &__img {
+            margin-bottom: 25px;
+        }
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
