@@ -17,6 +17,7 @@ $--f-Lato: 'Lato';
 
 .container {
     max-width: 1170px;
+    width: 98%;
     margin: 0 auto;
     padding: 0px 10px;
 
@@ -70,7 +71,7 @@ $--f-Lato: 'Lato';
     height: 600px;
     margin-bottom: 90px;
     &__title {
-        width: 770px;
+        width: 98%;
         position: relative;
         top: 100px;
     }
@@ -391,8 +392,18 @@ svg {
 
 @media screen and (max-width:770px){
     .container {
-        max-width: 750px;
-        padding: 0px 10px;
+        max-width: 770px;
+        width: 98%;
+        padding: 0px;
+    }
+    .justify {
+        justify-content: flex-start;
+    }
+    .speech__title {
+        max-width: 300px;
+    }
+    .speech__text {
+        max-width: 400px;
     }
     .header {
         width: 100%;
@@ -406,6 +417,9 @@ svg {
     .post_p__galery {
         flex-direction: column;
     }
+    .view__link_item > svg {
+        left: 0px;
+    }
     .post_p__item {
         flex-direction: row;
         &:nth-of-type(2) {
@@ -413,6 +427,7 @@ svg {
         }
         &__text {
             margin-left: 20px;
+            width: 340px;
         }
     }
     .p_r-20{
@@ -442,22 +457,41 @@ svg {
     .copyring {
         left: 200px;
     }
+    .margin {
+        margin: 0px;
+    }
+    .blog__text {
+        width: 340px;
+    }
+    
+    .blog__body:nth-child(3) {
+        justify-content: flex-start;
+    }
 }
 @media screen and (max-width:320px) {
     .container {
-        max-width: 300px;
+        width: 300px;
         padding: 0px 10px;
+    }
+    .footer__skelet {
+        height: 500px;
     }
     .header-nav__list {
         flex-direction: column;
         align-items: flex-end;
     }
-    *{
-        overflow-x:hidden;
-    }
     h1 {
         font-size: 30px;
         width: 300px;
+    }
+    .intro {
+        height: 450px;
+    }
+    .intro__title {
+        top: 0px;
+    }
+    .blog__text>.main__text {
+        height: 140px;
     }
     .blog__body {
         flex-wrap: wrap;
@@ -481,6 +515,7 @@ svg {
     }
     .speech__body {
         flex-wrap: wrap;
+        height: 410px;
     }
     .speech__title{
         margin-bottom: 20px;
@@ -490,5 +525,8 @@ svg {
     }
     .post_p__title {
         flex-direction: column;
+    }
+    .header__body {
+        height: 150px;
     }
 }
