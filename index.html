@@ -1,3 +1,5 @@
+<!-- Додай будь-ласка коментарі з приводу респонсіву також -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -87,8 +89,8 @@
                 5.25L-6.55671e-08 6.75Z"/>
             </symbol>
         </svg>
-
     </div>
+    <div class="overlay" id="overlay" onclick="toggle()"></div>
     <header class="header">
         <div class="container">
             <div class="header__body">
@@ -96,7 +98,8 @@
                     <img src="./resource/image/logo (4).png" alt="logo">
                 </div>
                 <div class="header__nav">
-                    <nav class="header-nav">
+                    <nav class="header-nav" id="menu">
+                        <button class="header-nav__close" onclick="toggle()"></button>
                         <ul class="header-nav__list">
                             <li class="header-nav__item"><a href="#" class="header-nav__link">home</a></li>
                             <li class="header-nav__item"><a href="#" class="header-nav__link">about</a></li>
@@ -110,11 +113,11 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="burger">
-                        <button>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                    <div class="header__burger">
+                        <button class="burger" id="burger" onclick="toggle()">
+                            <span class="burger__item"></span>
+                            <span class="burger__item"></span>
+                            <span class="burger__item"></span>
                         </button>
                     </div>
                 </div>
@@ -388,6 +391,18 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggle() {
+            const burger = document.getElementById('burger');
+            burger.classList.toggle('is-active');
+            const overlay = document.getElementById('overlay');
+            overlay.classList.toggle('show');
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('is-open');
+        }
+    </script>
+
 </body>
 
 </html>
