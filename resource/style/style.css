@@ -85,7 +85,7 @@
   margin-bottom: 90px;
 }
 .intro__title {
-  width: 98%;
+  width: 100%;
   position: relative;
   top: 100px;
 }
@@ -457,6 +457,9 @@ svg {
     width: 98%;
     padding: 0px;
   }
+  .speech__body {
+    width: 90%;
+  }
   .header-nav {
     position: fixed;
     right: 0;
@@ -505,17 +508,11 @@ svg {
   .speech__text {
     max-width: 400px;
   }
-  .header {
+  .img {
     width: 100%;
   }
-  .header__body {
-    flex-wrap: wrap;
-  }
-  .img {
-    width: 340px;
-  }
   .post_p__body {
-    max-width: 90%;
+    max-width: 100%;
   }
   .post_p__galery {
     flex-direction: column;
@@ -524,6 +521,7 @@ svg {
     left: 0px;
   }
   .post_p__item {
+    width: 100%;
     flex-direction: row;
   }
   .post_p__item:nth-of-type(2) {
@@ -531,7 +529,7 @@ svg {
   }
   .post_p__item__text {
     margin-left: 20px;
-    width: 340px;
+    width: 100%;
   }
   .p_r-20 {
     margin-left: 0;
@@ -542,7 +540,7 @@ svg {
     font-size: 36px;
     line-height: 50px;
     letter-spacing: 0.05em;
-    width: 700px;
+    max-width: 100%;
   }
   .direction-row {
     flex-direction: row;
@@ -564,10 +562,10 @@ svg {
     margin: 0px;
   }
   .blog__text {
-    width: 340px;
+    width: 100%;
   }
-  .intro__title {
-    max-width: 90%;
+  .blog__text > .main__text {
+    width: 90%;
   }
   .blog__body:nth-child(3) {
     justify-content: flex-start;
@@ -587,7 +585,7 @@ svg {
   }
   h1 {
     font-size: 30px;
-    width: 300px;
+    max-width: 98%;
   }
   .intro {
     height: 450px;
@@ -612,7 +610,7 @@ svg {
   }
   .post_p__item {
     margin-bottom: 50px;
-    max-width: 280px;
+    max-width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
     margin-right: 0px;
@@ -625,20 +623,20 @@ svg {
     flex-direction: column;
   }
   .post_p__item__text {
-    max-width: 95%;
+    max-width: 100%;
     margin: 0px;
     text-align: center;
   }
   .img {
-    width: 280px;
+    width: 100%;
   }
   .post_p__galery {
     flex-wrap: wrap;
     align-items: center;
   }
   .blog__text {
-    width: 300px;
     margin: 0px;
+    align-items: center;
   }
   .blog__text:nth-child(1) {
     margin: 0px;
@@ -646,6 +644,7 @@ svg {
   .speech__body {
     flex-wrap: wrap;
     height: 410px;
+    width: 90%;
   }
   .speech__title {
     margin-bottom: 20px;
@@ -661,8 +660,5 @@ svg {
   }
   .blog__img {
     margin: 0px;
-  }
-  .main__title {
-    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

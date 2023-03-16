@@ -449,6 +449,8 @@ svg {
     }
 }
 
+
+
 .is-active {
     .burger__item {
         opacity: 0;
@@ -485,6 +487,9 @@ svg {
         max-width: 770px;
         width: 98%;
         padding: 0px;
+    }
+    .speech__body {
+        width: 90%;
     }
     .header-nav {
         position: fixed;
@@ -541,7 +546,7 @@ svg {
         }
     }
     .img {
-        width: 340px;
+        width: 90%;
     }
     .post_p__body {
         max-width: 90%;
@@ -593,7 +598,10 @@ svg {
         margin: 0px;
     }
     .blog__text {
-        width: 340px;
+        width: 90%;
+        & > .main__text {
+            width: 90%;
+        }
     }
     .intro__title {
         max-width: 90%;
@@ -607,6 +615,43 @@ svg {
         max-width: 300px;
         margin: 0 auto;
     }
+    .header-nav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        min-height: 100vh;
+        background-color: $--c-white;
+        z-index: 10;
+        padding: 40px 20px 0px 60px;
+        transform: translateX(100vw);
+        &__list {
+            flex-direction: column;
+            align-items: flex-end;
+            padding-top: 40px;
+        }
+        &__item {
+            margin-right: 0px;
+            margin-bottom: 30px;
+            &:last-child {
+                margin: 0px;
+            }
+        }
+        &__close {
+            display: block;
+        }
+    }
+    .is-open {
+        position: fixed;
+        right: 0;
+        top: 0;
+        min-height: 100vh;
+        background-color: $--c-white;
+        z-index: 10;
+        padding: 40px 20px 0px 60px;
+        transform: translateX(0);
+        transition: all .3s;
+    }
+
     .footer__skelet {
         height: 500px;
     }
@@ -666,7 +711,6 @@ svg {
         align-items: center;
     }
     .blog__text {
-        width: 300px;
         margin: 0px;
         &:nth-child(1) {
             margin: 0px;
@@ -675,6 +719,7 @@ svg {
     .speech__body {
         flex-wrap: wrap;
         height: 410px;
+        width: 90%;
     }
     .speech__title{
         margin-bottom: 20px;
